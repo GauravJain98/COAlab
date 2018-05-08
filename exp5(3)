@@ -1,0 +1,18 @@
+
+;<greater of 2 numbers>
+;greater is stored in 0002
+mvi b,40
+mvi c,90
+mov a,b
+cmp c
+jc greater
+mov a,c
+sta 0003h
+mov a,b
+sta 0002h
+hlt
+greater: mov a,b
+	 sta 0003h
+	 mov a,c
+	 sta 0002h
+hlt
