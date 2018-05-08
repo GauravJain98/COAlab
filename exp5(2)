@@ -1,0 +1,11 @@
+
+;<loop using instruction set>
+
+mvi c,00h;
+loop:   inr c;
+	mov a,c;
+	cpi 08h;
+	jnz loop;
+sta 0000h;
+
+hlt
