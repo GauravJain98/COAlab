@@ -1,0 +1,13 @@
+
+;<multiply 2 numbers>
+mvi a,00
+sta 0000h
+mvi b,08
+mvi c,09
+loop:   lda 0000h
+	add c
+	sta 0000h
+	dcr b
+	mov a,b
+	jnz loop
+hlt
