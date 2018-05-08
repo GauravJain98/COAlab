@@ -1,0 +1,9 @@
+
+;<MULTI BY 4>
+mvi a,08h;
+sta 0000h;
+rlc;
+rlc;
+sta 0001h;
+
+hlt
