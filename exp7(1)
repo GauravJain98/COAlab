@@ -1,0 +1,16 @@
+
+;<substract 2 numbers>
+
+mvi a,06
+sta 0000h
+mvi a,07
+sta 0001h
+mov b,a
+lda 0000h
+sub b
+sta 0002h
+jc trip
+hlt
+trip: mvi a,01
+sta 0003h	
+hlt	
