@@ -1,0 +1,31 @@
+
+;<arrange array>
+
+mvi a,25
+sta 0001h
+mvi a,35
+sta 0002h
+mvi a,10
+sta 0003h
+mvi a,15
+sta 0004h
+mvi a,90
+sta 0005h
+mvi b,04
+start: lxi h,0001h
+mvi c,04
+back: mov a,m
+inr l
+cmp m
+jc skip ;for desc use jnc
+jz skip
+mov d,m
+mov m,a
+dcr l
+mov m,d
+inr l
+skip: dcr c
+jnz back
+dcr b
+jnz start
+hlt
