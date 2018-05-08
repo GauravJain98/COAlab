@@ -1,0 +1,8 @@
+
+;<2's compliment>
+mvi a,04h;
+sta 0002h;
+cma;
+inr a;
+sta 0001h;
+hlt
