@@ -1,5 +1,5 @@
 
-;<Program title>
+;<adding 2 numbers>
 
 mvi a,04h;
 mvi b,02h;
