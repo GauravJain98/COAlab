@@ -1,0 +1,9 @@
+
+;<Program title>
+
+mvi a,04h;
+mvi b,02h;
+add b;
+sta 0002h;
+
+hlt
