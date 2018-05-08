@@ -1,0 +1,10 @@
+
+;<swap hl as a pointer>
+
+lxi h,0000h
+mov c,m
+lda 0001h
+sta 0000h
+mov a,c
+sta 0001h
+hlt
